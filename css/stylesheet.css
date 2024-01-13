@@ -1,0 +1,761 @@
+:root{
+    --MainColor:#161E26;
+    --SecondryColor:#1F2C39;
+    --NavsColor:#283a4d;
+    --HoverColor:#1FFFFF;
+}
+
+body{
+    background-color: #EFEFEF;
+ 
+    
+   
+}
+.navbar{
+    height: 120px !important;
+    background: linear-gradient(to top ,#1F2C39 50%,#161E26 50%);
+
+}
+
+
+.container-fluid{
+    width: 75%;
+    bottom: -30px;
+}
+
+.navbar li{
+    padding: 0px 10px;
+}
+.navbar li:hover{
+    background-color: var(--HoverColor);
+    
+}
+.navbar li:hover a{
+    color: black !important;
+    
+}
+.homePage{
+    background-color: var(--HoverColor) !important;
+    color: black !important;
+}
+
+.navbar .nav-item{
+    background-color: var(--NavsColor);
+    margin-right: 7px;
+    box-shadow: 0px 0px .3px .2px black;
+    
+}
+.aColorBlackNav{
+    color: #000000 !important;
+}
+.aColorWhiteNav{
+    color: white!important;
+}
+
+.navbarIcon i{
+    font-size: 25px;
+    margin: 15px 7px ;
+    cursor: pointer;
+    color: white;
+}
+
+.navbarIcon{
+    padding: 0px 30px;
+    
+}
+
+.navbarIcon::after{
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 5px;
+    height: 100%;
+    background-color:white;
+    transform: skew(-20deg);
+    
+} 
+video{
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 125px;
+}
+
+.h1Span{
+    color: var(--HoverColor);
+}
+.whiteMood{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.toggle{
+    width: 120px;
+    background-color: var(--SecondryColor);
+    cursor: pointer;
+    
+}
+.toggle i{
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+}
+
+.signUp{
+    background: white;
+    color: black;
+    padding: 3px 15px;
+    border-radius: 30px;
+
+}
+
+.signUp:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+
+}
+.logIn{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 3px 15px;
+    border-radius: 30px;
+    color: white;
+
+}
+.logIn:hover{
+    background: white;
+    color: black;
+
+}
+
+.register{
+   margin-right: 85px;
+}
+
+.mainSlider{
+    height: 500px !important;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .8);
+    padding: 0px !important;
+    position: relative;
+
+}
+
+
+audio{
+    height: 35px !important;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .5);
+    border-radius: 30px;
+}
+
+.aud{
+    width: 90%;
+}
+.footerId{
+    background-color: #262936 ;
+}
+#subscribeId{
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color:#009AD8 ;
+    border:none !important;
+}
+
+.footerId i{
+    font-size: 20px;
+    padding: 10px 12px;
+    background-color: #1E202B;
+    border-radius: 50%;
+    color: #009AD8;
+
+}
+.footerP{
+    color: rgba(255, 255, 255, .8);
+}
+.subscribeInput{
+    background-color: #1E202B;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+.subscribeInput:focus{
+    box-shadow: none;
+    background-color: #1E202B;
+    border: 0;
+}
+.subscribeInput::placeholder{
+    color: rgba(255, 255, 255, .8);
+}
+
+.navbar-toggler{
+    right: 50px;
+}
+.navbar-toggler:focus{
+   border: none;
+   box-shadow: none;
+}
+
+.registerDrop{
+    display: none;
+}
+.iconHome i:hover{
+    background-color: #009AD8;
+    color: white;
+}
+
+
+/*                           news                               */
+
+
+.col-md-4 img{
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+.laLeage{
+    background-color: var(--NavsColor);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5);
+    
+    
+}
+.laLeage p{
+    height: 100px;
+}
+
+#news .nav-tabs{
+    border: none !important;
+    display: flex;
+    justify-content: center;
+}
+#news .nav-tabs li{
+    font-weight: bold;
+    position: relative;
+}
+#news .nav-tabs .nav-link.active::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(85, 85, 85);
+    bottom: 0px;
+    left: 0px;
+}
+
+#news .nav-tabs .nav-link ,#adminSection .nav-tabs .nav-link{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 0px !important;
+    
+}
+#news .nav-tabs .nav-link.active ,#adminSection .nav-tabs .nav-link.active{
+    background-color: rgb(32, 38, 131);
+    border: none;
+    color: white;
+    border-top-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    
+}
+
+                               /* Premier Leage */
+
+#premierLeage{
+    display: none;
+}                                     
+#tbodyId img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.premierDetails img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#premierLeage .nav-tabs .nav-link.active{
+    background-color: transparent;
+    border: none;
+    color: var(--MainColor);
+    
+}
+
+#premierLeage .nav-tabs{
+    display: flex;
+    justify-content: left;
+    border-bottom: 2px solid black !important;
+    padding-bottom: 10px;
+}
+
+#premierLeage .nav-tabs .nav-link{
+    color: black;
+    
+}
+
+.rowNewsPremier img{
+    width: 100%;
+    height: 400px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.rowNewsPremier .news2 img{
+    height: 300px;
+}
+
+#tbodyIdTop img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+#premierLeage .nav-link{
+    background-color: transparent !important;
+}
+#premierLeage .dateTabs .nav-tabs{
+    display: flex;
+    justify-content: center !important;
+    background-color: #009AD8;
+}
+
+#premierLeage .fixtureDate img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#premierLeage .container{
+    background-color: white;
+    border-radius: 30px;
+    
+}
+
+#premierLeage .nav-tabs li{
+    font-weight: bold;
+    position: relative;
+}
+#premierLeage .nav-tabs .nav-link.active::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(85, 85, 85);
+    bottom: 0px;
+    left: 0px;
+}
+
+#premierLeage .nav-tabs .nav-link.active {
+    background-color: rgb(32, 38, 131) !important;
+    border: none;
+    color: white;
+    border-top-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    
+}
+
+
+.homeNav{
+    text-decoration: none;
+    color: black ;
+    cursor: pointer;
+}
+.homeNav:hover{
+    text-decoration:underline;
+    color: black !important;
+}
+
+.tbodyFixtures img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.colorDark{
+    color: white !important;
+}
+
+.backDark{
+    background-color: #32343D !important;
+
+}
+.backDark2{
+    background-color: #161E26 !important;
+
+}
+
+.whiteMoodId{
+    background-color:#808080 !important ;
+}
+.moonMoodId{
+    color:#808080 !important ;
+}
+
+
+/*                                        team                                   */
+#teams{
+    display: none;
+}
+ 
+.team img{
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+#teams .container{
+    background-color: white;
+    border-radius: 30px;
+    
+}
+
+.team{
+    background-color: #F5F5F6;
+    border-radius: 10px;
+    width: 90% !important;
+}
+
+.back0{
+    background-image: linear-gradient(to bottom, #5793C6 50%,white 50%);
+}
+.back1{
+    background-image: linear-gradient(to bottom, #D00027 50%,white 50%);
+}
+.back2{
+    background-image: linear-gradient(to bottom, #00318A 50%,white 50%);
+}
+.back3{
+    background-image: linear-gradient(to bottom, #E01922 50%,white 50%);
+}
+.back4{
+    background-image: linear-gradient(to bottom, #DB0007 50%,white 50%);
+}
+.back5{
+    background-image: linear-gradient(to bottom, #001C58 50%,white 50%);
+}
+.back6{
+    background-image: linear-gradient(to bottom, #DA291C 50%,white 50%);
+}
+.back7{
+    background-image: linear-gradient(to bottom, #274488 50%,white 50%);
+}
+.back8{
+    background-image: linear-gradient(to bottom, #EA3325 50%,white 50%);
+}
+.back9{
+    background-image: linear-gradient(to bottom, #64003C 50%,white 50%);
+}
+.back10{
+    background-image: linear-gradient(to bottom, #F49727 50%,white 50%);
+}
+.back11{
+    background-image: linear-gradient(to bottom, #005DAA 50%,white 50%);
+}
+.back12{
+    background-image: linear-gradient(to bottom, #7A2638 50%,white 50%);
+}
+.back13{
+    background-image: linear-gradient(to bottom, #000000 50%,white 50%);
+}
+.back14{
+    background-image: linear-gradient(to bottom, #D20000 50%,white 50%);
+}
+.back15{
+    background-image: linear-gradient(to bottom, #660033 50%,white 50%);
+}
+.back16{
+    background-image: linear-gradient(to bottom, #C8102E 50%,white 50%);
+}
+.back17{
+    background-image: linear-gradient(to bottom, #FA4616 50%,white 50%);
+}
+.back18{
+    background-image: linear-gradient(to bottom, #000000 50%,white 50%);
+}
+.back19{
+    background-image: linear-gradient(to bottom, #17478F 50%,white 50%);
+}
+
+
+
+
+
+
+/*                                      Players                                       */
+#players{
+    display: none;
+}
+#players img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.imgTeamPlayer{
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+
+}
+.teamPlayersDetails{
+    border-bottom:2px solid black;
+}
+.homeNavPremierPlayers{
+    cursor: pointer;
+}
+.homeNavPremierPlayers:hover{
+    color: blue;
+}
+#players .container{
+    background-color: white;
+    border-radius: 30px;
+    
+}
+
+
+.dBlock{
+    display: block !important;
+}
+.dNone{
+    display: none !important;
+}
+
+
+/*                                  Register                                    */
+.signBox{
+    background-color:#ECF4D6 ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .5);
+    margin-top: 100px;
+    width: 80%;
+}
+
+#signIn{
+    padding-top: 80px !important;
+}
+#sign .container{
+    padding: 0px !important;
+}
+#sign .col-md-6{
+    padding: 50px 30px !important;
+}
+#sign .btnUp{
+    background-color: #2D9596;
+}
+#sign .icons i{
+    margin: 0px 5px !important;
+    font-size: 25px;
+    padding: 5px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .5);
+}
+
+#sign .backStyle{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #265073;
+    top: 0px;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+    margin: 0px !important;
+    transition: all 1s;
+    
+}
+
+#sign .backStyle button{
+    background-color: #ECF4D6;
+}
+#sign .btn:hover{
+    background-color: #38419D;
+    color: white;
+
+}
+#sign #signStyleId:hover{
+    background-color: #52D3D8;
+}
+
+
+#sign .style{
+    position: absolute ;
+    width: 50% ;
+    height: 100% ;
+    background-color:#265073 ;
+    top: 0px ;
+    transform: translateX(100%);
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    left: auto;
+}
+
+#sign select {
+    border: 0;
+}
+
+#sign .inputIcon i{
+    top: 9px;
+    left: 8px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .5);
+}
+
+#sign .inputIcon input{
+    padding-left: 30px !important;
+}
+.sign{
+    display: none;
+}
+.alertSign{
+    display: none;
+}
+
+.welcomeUser{
+    background-color: #001C58;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .8);
+}
+
+.addOpinionLogin{
+    background-color: #001C58 ;
+    color: white ;
+    
+}
+.addOpinionLogin:hover{
+    background-color: #009AD8;
+    color: black;
+}
+.userSection{
+    display: none;
+    padding-bottom: 110px;
+}
+
+
+
+
+.publicOpinionSection{
+    display: none;
+    padding-bottom: 110px;
+}
+
+.pHight{
+    height: 60px !important;
+
+}
+
+
+#adminSection img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.adminSection{
+    display: none;
+}
+
+.laLeage {
+    overflow: hidden;
+    
+}
+.laLeage img{
+    
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.laLeage img:hover{
+    transform: scale(1.1);
+}
+
+
+.imgHeader img{
+    width: 120px;
+    height: 120px;
+    
+}
+
+#headerHome .container{
+    width: 80%;
+}
+.sideRightHeader{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+}
+
+@media all and (max-width:800px){
+    video{
+        display: none;
+    }
+    
+    .container-fluid{
+        width: 100%;
+        padding: 0px;
+    }
+    .register button{
+        padding: 0px;
+        display: none;
+    }
+    
+    .navbar h1{
+        margin-top: 35px;
+    }
+    .navbarIcon{
+        display: none;
+    }
+    ul li{
+        margin-top: 5px;
+        text-align: center;
+    }
+    .registerDrop{
+        display: block !important;
+    }
+    .container{
+        width: 95% !important;
+        padding: 5px !important;
+    }
+    .tablePlayers{
+        width: 80%;
+    }
+    .offset-1{
+        margin-left: 0;
+    }
+    table{
+        width: 100%;
+        
+        
+    }
+    th,td{
+        font-size: 14px;
+    }
+    th.numberPlayers,th.agePlayers ,th.savesPlayers ,th.injuredPlayers{
+        display: none;
+    }
+    td.numberPlayers,td.agePlayers ,td.savesPlayers,td.injuredPlayers{
+        display: none;
+    }
+    .backStyle{
+        width: 100% !important;
+        height: 50% !important;
+        border-radius: 0px !important;
+       
+        
+    }
+    .signMedia{
+        display: none !important;
+    }
+
+   
+    
+}

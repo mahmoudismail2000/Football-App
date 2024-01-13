@@ -1,0 +1,919 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="shortcut icon" href="img/premierbadge.jpg" type="image/x-icon">
+  </head>
+  <body id="bodyId">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-relative">
+      <video autoplay loop muted src="img/Your paragraph text (2).mp4"></video>
+      <div class="container-fluid">
+        <div class="h-50 position-absolute top-0 w-75 ms-5">
+          <div class="d-flex justify-content-between">
+            <h1 class="text-white fw-bold ms-2">
+              Foot<span class="h1Span">B</span>all
+            </h1>
+            <div class="register mt-3">
+              <div class="d-flex">
+                <button class="btn signUp" id="navSignUp">Sign Up</button>
+                <button class="btn logIn mx-2" id="navSignIn">Login</button>
+                <div
+                  class="toggle d-flex justify-content-center align-items-center rounded-pill"
+                  id="toggleId"
+                >
+                  <div class="whiteMood" id="whiteMoodId"></div>
+
+                  <span class="text-secondary mx-2" id="optionToggle"
+                    >Light</span
+                  >
+
+                  <i class="fa-solid fa-sun" id="moonMoodId"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler position-absolute"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse h-50 position-absolute bottom-0 w-75"
+          id="navbarSupportedContent"
+        >
+          <div class="position-relative w-100 h-100 ms-5 z-3">
+            <ul class="navbar-nav me-auto mb-lg-0 mt-2">
+              <li class="nav-item rounded-pill homePage ms-2" id="liNavHome">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  id="homeNavId"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item rounded-pill" id="liFansNav">
+                <a class="nav-link text-white" href="#" id="publicOpinionNav">Fans Opinions</a>
+              </li>
+              <li class="nav-item rounded-pill" id="liNavTeams">
+                <a class="nav-link text-white" href="#" id="teamsNavId"
+                  >Teams</a
+                >
+              </li>
+              <li class="nav-item rounded-pill" id="liNavPrimer">
+                <a class="nav-link text-white" href="#" id="premierLeageNav"
+                  >Premier Leage</a
+                >
+              </li>
+              
+              
+              <li class="nav-item rounded-pill registerDrop">
+                <a class="nav-link text-white" href="#">Sign Up</a>
+              </li>
+              <li class="nav-item rounded-pill registerDrop">
+                <a class="nav-link text-white" href="#">Log In</a>
+              </li>
+            </ul>
+            <div class="position-absolute bottom-0 end-0 h-100 navbarIcon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header id="headerHome" class="pt-5">
+      <div class="container mt-4">
+        <div class="row g-4">
+          <div class="mainSlider col-md-7">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide h-100"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/champion.jpg"
+                    class="d-block w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/messi.jpg"
+                    class="d-block w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/salah.jpg"
+                    class="d-block w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 offset-1 p-4 bg-white rounded-4 sideRightHeader col-sm-3" id="sideRightHeaderId">
+            <div class="caption">
+              <h3>Join our Newsletter List</h3>
+              <p>Subscribe for exclusive content and curated updates</p>
+            </div>
+            <div class="imgHeader p-4 d-flex">
+              <img src="img/smartphone.png" alt="">
+              <h2 class=" fw-bold ms-2 fs-1">
+                Foot<span class="h1Span">B</span>all
+                <span class="ms-5">App</span>
+              </h2>
+
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <input type="email" class="form-control my-3 py-2" placeholder="Enter Your Email">
+            <button class="btn btn-warning px-5 fw-bold">SUBSCRIBE</button>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </header>
+    <section id="news" class="py-5">
+      <div class="container my-3 d-flex flex-column align-items-center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="matches-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#matches-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="matches-tab-pane"
+              aria-selected="true"
+            >
+              Matches
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="transfer-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#transfer-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="transfer-tab-pane"
+              aria-selected="false"
+            >
+              Transfer
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="injured-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#injured-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="injured-tab-pane"
+              aria-selected="false"
+            >
+              Injuries
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="score-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#score-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="score-tab-pane"
+              aria-selected="false"
+            >
+              Score
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-5" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="matches-tab-pane"
+            role="tabpanel"
+            aria-labelledby="matches-tab"
+            tabindex="0"
+          >
+            <div class="container">
+              <div class="row g-4" id="matchesId"></div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="transfer-tab-pane"
+            role="tabpanel"
+            aria-labelledby="transfer-tab"
+            tabindex="0"
+          >
+            <div class="container">
+              <div class="row g-4" id="transferId"></div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="injured-tab-pane"
+            role="tabpanel"
+            aria-labelledby="injured-tab"
+            tabindex="0"
+          >
+            <div class="container">
+              <div class="row g-4" id="injuredId"></div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="score-tab-pane"
+            role="tabpanel"
+            aria-labelledby="score-tab"
+            tabindex="0"
+          >
+            <div class="container">
+              <div class="row g-4" id="scoreId"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="premierLeage" class="my-5">
+      <div class="container p-5" id="darkId">
+        <div class="my-3">
+          <a id="homeNav" class="homeNav">Home </a
+          ><span>> Premier Leage ></span>
+          <span id="optionChoose" class="fw-bold"> News</span>
+        </div>
+        <div class="premierDetails d-flex my-3">
+          <img src="img/premierbadge.jpg" alt="" />
+          <div class="permierCaption">
+            <h2 class="fs-3">Premier Leage</h2>
+            <span>England</span>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-12">
+            <div class="navs-table">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="news-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#news-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="news-tab-pane"
+                    aria-selected="true"
+                  >
+                    News
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="fixtures-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#fixtures-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="fixtures-tab-pane"
+                    aria-selected="false"
+                  >
+                    Fixtures
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="topScorers-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#topScorers-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="topScorers-tab-pane"
+                    aria-selected="false"
+                  >
+                    TopScorers
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="tablePremier-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tablePremier-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="tablePremier-tab-pane"
+                    aria-selected="false"
+                  >
+                    Table
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="news-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="news-tab"
+                  tabindex="0"
+                >
+                  <div class="container my-5 bg-transparent">
+                    <div class="row rowNewsPremier mb-4">
+                      <div class="col-md-8" id="rowMainNewsPremier"></div>
+                      <div class="col-md-4 text-center"></div>
+                    </div>
+
+                    <div class="row g-4" id="rowNewsPremier"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade dateTabs"
+                  id="fixtures-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="fixtures-tab"
+                  tabindex="0"
+                >
+                  <ul class="nav nav-tabs mb-5 pt-2" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="before-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#before-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="before-tab-pane"
+                        aria-selected="true"
+                      >
+                        beforeDate
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="current-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#current-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="current-tab-pane"
+                        aria-selected="false"
+                      >
+                        currentDate
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="after-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#after-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="after-tab-pane"
+                        aria-selected="false"
+                      >
+                        afterDate
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade"
+                      id="before-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="before-tab"
+                      tabindex="0"
+                    >
+                      <div class="container bg-transparent">
+                        <div
+                          class="row d-flex justify-content-center"
+                          id="rowFixturesBefore"
+                        ></div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade show active"
+                      id="current-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="current-tab"
+                      tabindex="0"
+                    >
+                      <div class="container bg-transparent">
+                        <div
+                          class="row d-flex justify-content-center"
+                          id="rowFixturesCurrent"
+                        ></div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="after-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="after-tab"
+                      tabindex="0"
+                    >
+                      <div class="container bg-transparent">
+                        <div
+                          class="row d-flex justify-content-center"
+                          id="rowFixturesAfter"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="topScorers-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="topScorers-tab"
+                  tabindex="0"
+                >
+                  <div class="container bg-transparent">
+                    <div class="row d-flex justify-content-center">
+                      <div class="col-md-8">
+                        <table class="table table-dark table-striped my-5">
+                          <thead class="text-center">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Goals</th>
+                            <th>Assist</th>
+                            <th>Penalty Goals</th>
+                            <th>Team</th>
+                          </thead>
+                          <tbody id="tbodyIdTop">
+                            <tr>
+                              <td>1</td>
+                              <td>
+                                <img src="img/messi.jpg" alt="" />
+                                <span>Messi</span>
+                              </td>
+                              <td>33</td>
+                              <td>10</td>
+                              <td>3</td>
+                              <td>
+                                <img src="img/messi.jpg" alt="" />barcelona
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tablePremier-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="tablePremier-tab"
+                  tabindex="0"
+                >
+                  <div class="container bg-transparent my-5">
+                    <div class="row d-flex justify-content-center">
+                      <div class="col-md-8">
+                        <table class="table table-dark table-striped">
+                          <thead>
+                            <th>ID</th>
+                            <th>Team</th>
+                            <th>P</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>Goals</th>
+                            <th>Diff</th>
+                            <th>Points</th>
+                          </thead>
+                          <tbody id="tbodyId"></tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="teams">
+      <div
+        class="container my-5 text-center py-5 px-4 rounded-5"
+        id="teamsContainerId"
+      >
+        <h2 class="mb-5">Premier Leage Team</h2>
+        <div class="row gy-4" id="teamRowId">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="players">
+      <div class="container my-5 p-5" id="playersContainerId">
+        <div class="row d-flex justify-content-center g-4">
+          <div class="col-md-12 d-flex flex-column">
+            <div class="my-3">
+              <span id="homeNavPlayers" class="homeNavPremierPlayers"
+                >Home </span
+              ><span>></span>
+              <span id="teamNavPlayers" class="homeNavPremierPlayers">
+                Teams </span
+              ><span>></span> <span class="fw-bold"> Players</span>
+            </div>
+            <div
+              class="d-flex teamPlayersDetails pb-5 mt-3"
+              id="teamPlayersDetails"
+            >
+              <img
+                src="img/champion.jpg"
+                alt=""
+                class="imgTeamPlayer"
+                id="imageTeamPlayers"
+              />
+              <div class="teamPlayers ms-4">
+                <h2 class="fs-3" id="nameTeamPlayer">Liver Pool</h2>
+                <span class="homeNavPremierPlayers" id="navPremierPlayers"
+                  >Premier Leage</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 d-flex flex-column align-items-center">
+            <h3 class="mb-4 fw-bold">Team Players</h3>
+            <table class="table table-dark table-striped tablePlayers">
+              <thead class="text-center">
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="numberPlayers">Number</th>
+                <th class="agePlayers">Age</th>
+                <th>Played</th>
+                <th class="injuredPlayers">Injured</th>
+                <th>Goals</th>
+                <th>Assist</th>
+                <th class="savesPlayers">Saves</th>
+              </thead>
+              <tbody id="tbodyPlayers">
+                <tr>
+                  <td>1</td>
+                  <td><img src="img/messi.jpg" alt="" /></td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign my-5" id="sign">
+      <div
+        class="container py-5 position-relative overflow-hidden signBox"
+        id="signBox"
+      >
+        <div class="row">
+          <div class="col-md-6 text-center" id="signIn">
+            <h2>Sign In</h2>
+            <div class="icons my-4 d-flex justify-content-center">
+              <i class="fa-brands fa-google-plus-g"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="inputIcon">
+              <div class="position-relative">
+                <input
+                  type="text"
+                  class="form-control my-4"
+                  id="userEmail"
+                  placeholder="Enter Your Email"
+                />
+                <i class="fa-solid fa-envelope position-absolute"></i>
+              </div>
+              <div class="position-relative">
+                <input
+                  type="password"
+                  class="form-control my-4"
+                  id="userPassword"
+                  placeholder="Enter Your Password"
+                />
+                <i class="fa-solid fa-unlock position-absolute"></i>
+              </div>
+              <div class="alert alert-danger alertSign" id="alertSignIn">
+                <p>Email or Password Not Valid</p>
+              </div>
+              <button
+                class="btn text-capitalize btnUp px-5 text-white"
+                id="signInLogin"
+              >
+                sign in
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <h2>Create Account</h2>
+            <div class="icons my-3">
+              <i class="fa-brands fa-google-plus-g"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div>
+              <div class="d-flex">
+                <input
+                  type="text"
+                  class="form-control me-2"
+                  id="firstName"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="form-control ms-2"
+                  id="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+              <input
+                type="text"
+                class="form-control my-2"
+                id="email"
+                placeholder="Email"
+              />
+              <input
+                type="password"
+                class="form-control my-2"
+                id="password"
+                placeholder="Password"
+              />
+              <input
+                type="password"
+                class="form-control my-2"
+                id="rePassword"
+                placeholder="Re-Password"
+              />
+              <div class="d-flex justify-content-between">
+                <input
+                  type="number"
+                  class="form-control w-50"
+                  id="phone"
+                  placeholder="Phone Number"
+                />
+                <select name="nationality" id="nationality" class="w-25">
+                  <option disabled selected value="nation">Nationality</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="Palestine">Palestine</option>
+                  <option value="KSA">KSA</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Maroc">Maroc</option>
+                </select>
+              </div>
+              <div class="my-2">
+                <label for="">Male</label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  class="me-2"
+                  checked
+                />
+                <label for="">Female</label>
+                <input type="radio" name="gender" value="female" />
+              </div>
+              <div class="alert alert-danger alertSign" id="alertSignUP">
+                <p id="alertSpan">Email Already Existed</p>
+              </div>
+              <button
+                class="btn text-capitalize btnUp px-5 text-white"
+                id="signUp"
+              >
+                sign up
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="backStyle d-flex flex-column justify-content-center align-items-center text-white backMove"
+          id="backStyle"
+        >
+          <h2 class="my-3">Welcome In My WebSite</h2>
+          <p class="my-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+            sit!
+          </p>
+          <button class="btn text-capitalize px-5 my-3 signMedia" id="signStyleId">
+            Sign In
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="publicOpinionSection" class="my-5 publicOpinionSection">
+      
+      <div class="container text-center w-75">
+        <h3>Fans opinions</h3>
+        <div class="row my-5 g-4" id="publicOpinionId">
+          
+          
+
+          </div>
+        
+      </div>
+    </section>
+
+    <section id="userSection" class="userSection pt-5">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="welcomeUser w-50 p-5 text-center my-5">
+          <h4 class="text-white">
+            Welcome <span id="nameOfUser" class="text-capitalize">Mahmoud</span>
+          </h4>
+        </div>
+
+        <div class="w-75 text-center">
+          <h4 class="fw-bold">Add Opinion</h4>
+
+          <input
+            type="text"
+            class="form-control my-4"
+            placeholder="Link Image"
+            id="imageLinkOpinion"
+          />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Description"
+            id="descriptionOpinion"
+          />
+          <button
+            class="btn px-5 py-2 my-4 fw-bold addOpinionLogin"
+            id="addOpinionId"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+      <div class="container w-75">
+        <div class="row g-4" id="rowOpinionId"></div>
+      </div>
+    </section>
+    <section id="adminSection" class="adminSection ">
+
+      <div class="container d-flex flex-column align-items-center my-5">
+        <h4 class="fw-bold pt-4">Welcome In Admin Page</h4>
+
+        <nav class="mt-4">
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Users Accounts</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Fans Opinions</button>
+    
+  </div>
+</nav>
+<div class="tab-content w-100 my-4" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <table class="table table-dark table-striped">
+            <thead>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Nationality</th>
+              <th>Gender</th>
+              <th>Delete</th>
+            </thead>
+            <tbody id="usersAdmin">
+              <tr>
+                <td>1</td>
+                <td>Mahmoud Ismail</td>
+                <td>mahmoudismail@gmail.com</td>
+                <td>01067764726</td>
+                <td>egypt</td>
+                <td>male</td>
+                <td><button class="btn btn-danger">Delete</button></td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <table class="table table-dark table-striped">
+            <thead>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Image</th>
+              <th>description</th>
+              <th>Delete</th>
+            </thead>
+            <tbody id="fansOpinionAdmin">
+              <tr>
+                <td>1</td>
+                <td>mahmoudismail@gmail.com</td>
+                <td>01067764726</td>
+                <td><img src="img/champion.jpg" alt=""></td>
+                <td>description</td>
+
+
+                <td><button class="btn btn-danger">Delete</button></td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      </div>
+      
+
+    </section>
+    
+    <section class="footerId mt-4">
+      <div class="container w-75 py-5">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <div class="position-relative">
+                <input
+                  type="text"
+                  placeholder="Enter Your Email To Subscribe..."
+                  class="form-control rounded-pill py-3 subscribeInput"
+                />
+                <button
+                  class="btn btn-primary position-absolute rounded-pill p-2 px-3"
+                  id="subscribeId"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 offset-1">
+            <div class="iconHome">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google-plus-g"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+          <div class="col-md-12 pt-4 footerP">
+            <p>
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+          <div class="col-md-12 d-flex justify-content-center">
+            <h1 class="text-white fw-bold">
+              Foot<span class="h1Span">B</span>all
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
